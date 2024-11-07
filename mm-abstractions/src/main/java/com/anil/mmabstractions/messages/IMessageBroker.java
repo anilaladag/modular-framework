@@ -1,10 +1,10 @@
 package com.anil.mmabstractions.messages;
 
-import java.util.concurrent.CancellationException;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.ExecutorService;
 
 public interface IMessageBroker {
-    CompletableFuture<Void> publishAsync(IMessage message, AtomicBoolean cancel) throws CancellationException;
-    CompletableFuture<Void> publishAsync(IMessage[] message, AtomicBoolean cancel) throws CancellationException;
+    CompletableFuture<Void> publishAsync(IMessage message, ExecutorService executor);
+
+    CompletableFuture<Void> publishAsync(IMessage[] message, ExecutorService executor);
 }

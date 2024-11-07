@@ -1,8 +1,8 @@
-package com.anil.mmabstractions.events;
+package com.anil.mmabstractions.kernel;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 
-public interface IEventHandler<T extends IEvent> {
+public interface IDomainEventHandler<T extends IDomainEvent> {
     CompletableFuture<Void> handleAsync(T event, ExecutorService executor);
 }

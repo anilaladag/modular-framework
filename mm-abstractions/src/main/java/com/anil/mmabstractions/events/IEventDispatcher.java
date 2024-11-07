@@ -1,8 +1,8 @@
 package com.anil.mmabstractions.events;
 
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.ExecutorService;
 
 public interface IEventDispatcher {
-    <T extends IEvent> CompletableFuture<Void> publishAsync(T event, AtomicBoolean cancel);
+    <T extends IEvent> CompletableFuture<Void> publishAsync(T event, ExecutorService executor);
 }
