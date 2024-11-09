@@ -6,7 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import java.util.Collections;
 import java.util.List;
 
-public interface IModule {
+public interface Module {
     String getName();
 
     default List<String> getPolicies() {

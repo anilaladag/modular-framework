@@ -2,7 +2,7 @@ package com.anil.mmabstractions.contexts;
 
 import java.util.UUID;
 
-public interface IContext {
+public interface Context {
 
     UUID getRequestId();
 
@@ -14,5 +14,5 @@ public interface IContext {
 
     String getUserAgent();
 
-    IIdentityContext getIdentity();
+    IdentityContext getIdentity();
 }

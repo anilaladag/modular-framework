@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-public interface IAuthManager {
+public interface AuthManager {
 
     JsonWebToken createToken(UUID userId, String role, String audience, Map<String, List<String>> claims);
 

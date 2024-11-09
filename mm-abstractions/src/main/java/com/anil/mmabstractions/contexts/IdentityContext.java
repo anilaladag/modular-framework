@@ -3,7 +3,7 @@ package com.anil.mmabstractions.contexts;
 import java.util.Map;
 import java.util.UUID;
 
-public interface IIdentityContext {
+public interface IdentityContext {
 
     boolean isAuthenticated();
 

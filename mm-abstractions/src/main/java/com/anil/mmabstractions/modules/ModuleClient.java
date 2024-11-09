@@ -3,7 +3,7 @@ package com.anil.mmabstractions.modules;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 
-public interface IModuleClient {
+public interface ModuleClient {
 
     CompletableFuture<Void> sendAsync(String path, Object request, ExecutorService executor);
 
