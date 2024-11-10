@@ -1,7 +1,7 @@
 package com.anil.mmabstractions.time;
 
-import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 
 public interface Clock {
-    LocalDateTime currentDate();
+    ZonedDateTime currentDate();
 }
